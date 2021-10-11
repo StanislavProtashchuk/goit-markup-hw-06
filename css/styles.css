@@ -638,7 +638,7 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--primary-title-color);
 }
 
 .footer-mail-container {
