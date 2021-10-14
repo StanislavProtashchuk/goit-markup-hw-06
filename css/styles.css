@@ -899,8 +899,6 @@ input::placeholder {
 }
 
 .modal {
-  padding: 40px;
-
   width: 528px;
   height: 581px;
   left: 536px;
@@ -921,8 +919,8 @@ input::placeholder {
   font-weight: bold;
   font-size: 20px;
   line-height: calc(23 / 20);
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 
   margin-bottom: 12px;
 
@@ -930,7 +928,6 @@ input::placeholder {
 }
 
 .close-btn {
-  position: absolute;
   width: 30px;
   height: 30px;
   left: 1026px;
@@ -942,7 +939,7 @@ input::placeholder {
   box-sizing: border-box;
 
   margin-top: 8px;
-  margin-right: 8px;
+  margin-left: 490px;
 }
 
 .close-btn-img {
@@ -951,6 +948,7 @@ input::placeholder {
 }
 
 .modal-form {
+  padding: 0 40px 12px;
 }
 
 .modal-form-label {
@@ -967,11 +965,24 @@ input::placeholder {
   color: #757575;
 }
 
+.input {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .modal-form-input {
   width: 100%;
   height: 40px;
   left: 576px;
   top: 382px;
+
+  padding-left: 42px;
 
   margin-bottom: 10px;
 
@@ -980,8 +991,12 @@ input::placeholder {
   border-radius: 4px;
 }
 
+.modal-form-comment {
+  margin-bottom: 20px;
+}
+
 .modal-comment {
-  width: 100%;
+  width: 448px;
   height: 120px;
   left: 576px;
   top: 518px;
@@ -1007,6 +1022,10 @@ input::placeholder {
   margin: auto;
 }
 
+.checkbox {
+  margin-bottom: 30px;
+}
+
 .modal-checkbox {
   font-family: Roboto;
   font-style: normal;
@@ -1015,7 +1034,6 @@ input::placeholder {
   line-height: calc(24 / 14);
 
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 
