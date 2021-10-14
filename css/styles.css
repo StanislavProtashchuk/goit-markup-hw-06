@@ -991,6 +991,14 @@ input::placeholder {
   border-radius: 4px;
 }
 
+.modal-form-input:focus {
+  border: 10px solid var(--accent-color);
+}
+
+.modal-form-input:focus + .input-icon {
+  fill: var(--accent-color);
+}
+
 .modal-form-comment {
   margin-bottom: 20px;
 }
