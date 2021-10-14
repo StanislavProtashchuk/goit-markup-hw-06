@@ -379,7 +379,7 @@
     </form>
   </div>
 </footer>
-<div class="backdrop is-hidde" data-modal>
+<div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="close-btn" data-modal-close>
       <svg class="close-btn-img">
@@ -404,8 +404,7 @@
           <input type="tel" name="phone-number" id="phone-number" class="modal-form-input">
           <svg class="input-icon" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-phone-form"></use>
-          </svg>
-          
+          </svg>          
         </span>
       </div>
       <div>
@@ -422,16 +421,18 @@
         <label for="comment" class="modal-form-label">Комментарий</label>
         <textarea name="comment" id="comment" rows="10" class="modal-comment" placeholder="Введите текст"></textarea>
       </div>
-      <div class="checkbox">
-      <input type="checkbox" id="modal-checkbox">
-      <label for="modal-checkbox" class="modal-checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="modal-checkbox-link">Условия договора</a> </label>
-      </div>
+      <input type="checkbox" id="modal-checkbox" class="modal-checkbox-input visually-hidden">
+      <label for="modal-checkbox" class="modal-checkbox"><span>
+        <svg class="submit-icon" width="11px" height="8px">
+          <use href="./images/sprite.svg#icon-Submit"></use>
+        </svg>
+      </span>Соглашаюсь с рассылкой и принимаю <a href="" class="modal-checkbox-link">Условия договора</a> </label>
       <button type="submit" class="submit-btn submit-btn-title submit-modal-btn">Отправить</button>
     </form>
   </div>
 </div>
 
-<!-- <script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
