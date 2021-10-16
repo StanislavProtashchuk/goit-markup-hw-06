@@ -619,14 +619,7 @@ footer {
 }
 
 .footer-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 219px;
-  height: 16px;
-  left: 815px;
-  top: 2751px;
+  display: block;
 
   margin-bottom: 20px;
 
@@ -698,8 +691,6 @@ input::placeholder {
 
   width: 200px;
   height: 50px;
-  left: 1185px;
-  top: 2787px;
 
   border: none;
 
@@ -904,7 +895,8 @@ input::placeholder {
 }
 
 .modal {
-  width: 528px;
+  padding: 40px;
+  min-width: 528px;
   min-height: 581px;
   left: 536px;
   top: 221px;
@@ -933,18 +925,21 @@ input::placeholder {
 }
 
 .close-btn {
-  width: 30px;
-  height: 30px;
-  left: 1026px;
-  top: 229px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  position: absolute;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   box-sizing: border-box;
 
-  margin-top: 8px;
-  margin-left: 490px;
+  width: 30px;
+  height: 30px;
+
+  top: 8px;
+  right: 8px;
 
   cursor: pointer;
 
@@ -952,8 +947,8 @@ input::placeholder {
 }
 
 .close-btn-img {
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -963,7 +958,7 @@ input::placeholder {
 }
 
 .modal-form {
-  padding: 0 40px 12px;
+  margin-bottom: 10px;
 }
 
 .modal-form-label {
@@ -995,12 +990,8 @@ input::placeholder {
 .modal-form-input {
   width: 100%;
   height: 40px;
-  left: 576px;
-  top: 382px;
 
   padding-left: 42px;
-
-  margin-bottom: 10px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -1025,10 +1016,9 @@ input::placeholder {
 }
 
 .modal-comment {
-  width: 448px;
+  display: block;
+  width: 100%;
   height: 120px;
-  left: 576px;
-  top: 518px;
 
   padding: 12px 16px;
 
